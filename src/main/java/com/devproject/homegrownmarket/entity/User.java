@@ -10,6 +10,7 @@ import javax.persistence.*;
 public class User {
     
     @Column
+    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long userId;
     
