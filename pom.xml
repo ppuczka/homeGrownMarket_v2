@@ -8,15 +8,24 @@
         <version>2.1.9.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>com.devproject</groupId>
     <artifactId>homegrownmarket</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+
     <name>homegrownmarket</name>
     <description>HomeGrownMarket</description>
+
+    <version>0.0.2-SNAPSHOT</version>
 
     <properties>
         <java.version>1.8</java.version>
         <docker.image.prefix>devproject</docker.image.prefix>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <!-- SonarCloud -->
+        <sonar.projectKey>ppuczka_homegrownmarket_app</sonar.projectKey>
+        <sonar.organization>ppuczka</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
     <dependencies>
@@ -82,6 +91,14 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <!-- see versions at https://search.maven.org/search?q=g:org.sonarsource.scanner.maven%20AND%20a:sonar-maven-plugin -->
+                <version>3.6.1.1688</version>
+            </plugin>
+
         </plugins>
     </build>
 </project>

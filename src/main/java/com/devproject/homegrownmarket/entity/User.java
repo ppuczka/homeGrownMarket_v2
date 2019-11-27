@@ -8,21 +8,21 @@ import javax.persistence.*;
 @Table(name = "users")
 @Data
 public class User {
-    
+
     @Column
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long userId;
-    
+
     @Column
     private String firstName;
-    
+
     @Column
-    private String lastName; 
-    
+    private String lastName;
+
     @Column
-    private String userName; 
-    
+    private String userName;
+
     @Column
-    private String password; 
+    private String password;
 }
