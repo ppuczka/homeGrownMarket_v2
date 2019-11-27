@@ -51,6 +51,9 @@ jobs:
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
 
+    - name: Build jar with Maven
+      run: 
+        mvn -B package -DskipTests --file pom.xml 
     - name: Build, tag, and push image to Amazon ECR
       id: build-image
       env:
