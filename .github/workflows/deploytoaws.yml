@@ -81,5 +81,5 @@ jobs:
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
         service: nginx-service
-        cluster: aws
+        cluster: mycluster
         wait-for-service-stability: true
