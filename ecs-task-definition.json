@@ -64,6 +64,7 @@
   "placementConstraints": [],
   "memory": "512",
   "taskRoleArn": null,
+  "family": "my-run-task-definition",
   "pidMode": null,
   "requiresCompatibilities": [
     "FARGATE"
