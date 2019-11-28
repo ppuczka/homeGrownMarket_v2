@@ -13,6 +13,7 @@
           "awslogs-group": "/ecs/my-run-task-definition",
           "awslogs-region": "eu-central-1",
           "awslogs-stream-prefix": "ecs"
+        }
         },
       "portMappings": [
         {
