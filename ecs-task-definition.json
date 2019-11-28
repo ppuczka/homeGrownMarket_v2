@@ -1,6 +1,7 @@
 {
   "family": "homegrownmarket",
   "networkMode": "awsvpc",
+  "executionRoleArn": "arn:aws:iam::730125637642:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "name": "homegrownmarket-app",
